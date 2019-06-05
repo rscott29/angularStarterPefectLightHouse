@@ -12,6 +12,6 @@ openssl req \
   -newkey rsa:2048 -nodes \
   -keyout "$hostname.key.pem" \
   -x509 -sha256 -days 3650 \
-  -config C:/code/angularStarterPefectLightHouse/security/sslconf.cfg\
+  -config sslconf.cfg\
   -out "$hostname.cert.pem"
 openssl x509 -noout -text -in "$hostname.cert.pem"

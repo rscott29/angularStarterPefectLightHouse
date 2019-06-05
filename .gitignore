@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# SSL
+Richards-MacBook-Pro.local.cert.pem
+Richards-MacBook-Pro.local.key.pem
