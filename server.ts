@@ -25,8 +25,8 @@ app.use(compression());
 //   cert: fs.readFileSync('./security/Richards-MacBook-Pro.local.cert.pem')
 // };
 const spdyOptions = {
-  key: fs.readFileSync('./security/L-SPF0YRZEG.key.pem'),
-  cert: fs.readFileSync('./security/L-SPF0YRZEG.cert.pem'),
+  key: fs.readFileSync('./security/Richards-MacBook-Pro.local.key.pem'),
+  cert: fs.readFileSync('./security/Richards-MacBook-Pro.local.cert.pem'),
   protocols: [ 'h2'],
   plain: false,
 
