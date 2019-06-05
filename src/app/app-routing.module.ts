@@ -3,6 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    loadChildren: () =>
+    import('./auth/auth.module').then(mod => mod.AuthModule)
+  },
+  {
     path: 'feature1',
     loadChildren: () =>
     import('./feature1/feature1.module').then(mod => mod.Feature1Module)
@@ -12,11 +17,7 @@ const routes: Routes = [
     loadChildren: () =>
     import('./feature2/feature2.module').then(mod => mod.Feature2Module)
   },
-  {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full'
-  }
+
   ];
 
 @NgModule({
