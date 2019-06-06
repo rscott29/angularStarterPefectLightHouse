@@ -29,7 +29,9 @@
               "src/robots.txt"
             ],
             "styles": ["src/styles.scss"],
-            "scripts": []
+            "scripts": [
+             "./src/assets/modernizr-custom.js"
+            ]
           },
           "configurations": {
             "production": {

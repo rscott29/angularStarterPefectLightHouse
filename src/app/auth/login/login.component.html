@@ -1,13 +1,35 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+  rel="preconnect"
+/>
+<div class="bg">
+  <img src="{{bgImagePath}}" alt="" />
+</div>
 
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<div class="container">
+  <h1>Login</h1>
+  <label for="user">User Name</label>
+  <input
+    class="text"
+    type="text"
+    name="user"
+    id="user"
+    placeholder="Username"
+  />
+  <label for="pass">Password</label>
+  <input
+    class="text"
+    type="password"
+    name="pass"
+    id="pass"
+    placeholder="Password"
+  />
 
-<div class="bg-img">
-  <div class="container">
-    <h1>Login</h1>
-
-    <input class="text" type="text" name="user" placeholder="Username"/>
-    <input class="text" type="password" name="pass" placeholder="Password"/>
-  
-    <input (click)="login()" type="submit" name="submit"  value="Login" class="submit-button"/>
-  </div>
+  <input
+    (click)="login()"
+    type="submit"
+    name="submit"
+    value="Login"
+    class="submit-button"
+  />
 </div>
